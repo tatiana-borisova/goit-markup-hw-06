@@ -859,7 +859,7 @@ textarea {
 
   transition: opacity var(--duration) var(--timing-function);
 }
-.checkbox:checked + .checkbox-icon-check {
+.checkbox:checked ~ .checkbox-icon-check {
   opacity: 1;
 }
 /* Второй костыльный вариант
@@ -871,6 +871,8 @@ textarea {
   border: transparent;
 } */
 .agreement {
+  display: block;
+  margin-left: 4px;
   color: var(--accent-color);
 }
 .modal-btn-submit {
